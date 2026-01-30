@@ -15,7 +15,6 @@ import Input from '../inputs/Input';
 import toast from 'react-hot-toast';
 import Button from '../Button';
 
-
 const LoginModal = () => {
   const router = useRouter();
   const registerModal = useRegisterModal();
@@ -90,7 +89,7 @@ const LoginModal = () => {
         outline
         label="Continue with Github"
         icon={AiFillGithub}
-        onClick={() => {}}
+        onClick={() => signIn("github")}
       />
       <div className="mt-4 font-light text-center text-neutral-500">
         <div className="flex flex-row items-center justify-center gap-2 text-center">
